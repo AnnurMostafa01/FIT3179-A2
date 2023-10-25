@@ -1,0 +1,21 @@
+
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "data":{"url": "volcano.csv"},
+  "width": 500,
+  "height": 500,
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Region", "type": "nominal", "axis": {"labelAngle": 90}},
+    "y": {"field": "Elevation (Meters)", "type": "quantitative"},
+    "color": {
+      "field": "Region"
+     
+    }
+  
+  
+  
+  }
+}
